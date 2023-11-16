@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ToDo App</title>
+  </head>
+  <style>
+    .content input {
+      border: none;
+    }
+    .content {
+      display: flex;
+      border: 1px solid gray;
+      padding: 10px;
+      max-width: 300px;
+      justify-content: space-between;
+    }
+  </style>
+  <body>
+    <header>
+      <h2>ToDo List App</h2>
+      <form id="task-input-form">
+        <input
+          type="text"
+          placeholder="Write your first task..."
+          id="new-task-input"
+        />
+        <input type="submit" value="Add Task" id="task-submit" />
+      </form>
+    </header>
+
+    <main>
+      <section>
+        <h2>Tasks</h2>
+        <div class="tasks">
+          <!-- <div class="content">
+            <input type="text" value="a new task" readonly />
+
+            <div class="actioms">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
